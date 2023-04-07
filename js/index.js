@@ -9,7 +9,7 @@ var CheckFound = 0;
 
 
 $(document).ready(function () {
-
+/*
   sessionStorage.clear(); 
   var str = "";
   var sLineID = "Ua6b6bf745bd9bfd01a180de1a05c23b3";
@@ -22,19 +22,18 @@ $(document).ready(function () {
   str += '<div class="NameLine">'+ sessionStorage.getItem("LineName")+'</div>';
   $("#MyProfile").html(str);  
   Connect_DB();
-   
-  //main();
-  //dbProfile = firebase.firestore().collection("CheckProfile");
-  //dbSellerCampaign = firebase.firestore().collection("SellerCampaign");
-  //dbBAlifeMember_log = firebase.firestore().collection("BAlifeMember_log");
-  //CheckData();
-
   dbProfile = firebase.firestore().collection("CheckProfile");
   dbLeagueMember = firebase.firestore().collection("BBD_LeagueMember");
   dbBBDKickoff = firebase.firestore().collection("Championship_Zone");
   dbBBDRH = firebase.firestore().collection("Championship_RH");
   dbBBDlog = firebase.firestore().collection("BBD_Log");
   CheckData();
+*/   
+  main();
+  //dbProfile = firebase.firestore().collection("CheckProfile");
+  //dbSellerCampaign = firebase.firestore().collection("SellerCampaign");
+  //dbBAlifeMember_log = firebase.firestore().collection("BAlifeMember_log");
+  //CheckData();
 
 
 });
@@ -42,7 +41,7 @@ $(document).ready(function () {
 
 
 async function main() {
-  await liff.init({ liffId: "1657509542-KGPDLak7" });
+  await liff.init({ liffId: "1657509542-8vRw27WX" });
   document.getElementById("isLoggedIn").append(liff.isLoggedIn());
   if(liff.isLoggedIn()) {
     getUserProfile();
@@ -62,6 +61,12 @@ async function getUserProfile() {
   str += '<div class="NameLine">'+ sessionStorage.getItem("LineName")+'</div>';
   $("#MyProfile").html(str);  
   Connect_DB();
+  dbProfile = firebase.firestore().collection("CheckProfile");
+  dbLeagueMember = firebase.firestore().collection("BBD_LeagueMember");
+  dbBBDKickoff = firebase.firestore().collection("Championship_Zone");
+  dbBBDRH = firebase.firestore().collection("Championship_RH");
+  dbBBDlog = firebase.firestore().collection("BBD_Log");
+  CheckData();
 }
 
 
