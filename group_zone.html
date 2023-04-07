@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LINE Retail Society</title>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PW7HPDW');</script>
+  <!-- Favicons -->
+  <link href="assets/img/favicom.ico" rel="icon">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+-->
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/ttb.css" rel="stylesheet">
+  <link href="assets/css/css.css" rel="stylesheet">
+  <link href="assets/css/w3.css" rel="stylesheet">
+  <link href="assets/css/competition.css" rel="stylesheet">
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body style="background-color: #dbe5f3;">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW7HPDW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto"><a href="index.html"><span>LINE</span> Retail Society</a></h1>
+      <div class="mobile-nav-toggle d-lg-none" onclick="OpenMenu()">
+        <i class="icofont-navigation-menu"></i>
+      </div>
+    </div>
+  </header>
+
+  <main id="main1">
+    <div><img src="./img/intro-03.jpg" style="width:100%;margin-top:50px;max-height: 300px;"></div>
+    <div class="container">
+      <center>
+        <div class='btn-t3' style='background-color: #94a9b3;border: solid #94a9b3 1px;margin-top:40px;'>ข้อมูลการแข่งขัน ระดับ RH</div>
+        <div id="ReportDate" style="font-size: 12px; margin-top:-5px;font-weight: 600;"></div>
+      </center>
+
+
+      <div class="clr"></div>
+      <div style="margin:20px auto 0 auto; width:100%; max-width: 330px;">
+        <div class="box-menu4" onclick="window.location.href='group_all.html';"><img src="./img/introduce.png" class="imgBall1"><br>ผลงาน<br>สะสม RH</div>
+        <div class="box-menu4" onclick="window.location.href='group_rh.html';"><img src="./img/leaderboard.png" class="imgBall1"><br>ผลงานตาม<br>สายแข่งขัน</div>
+        <div class="box-menu44" onclick="window.location.href='group_zone.html';"><img src="./img/rewards.png" class="imgBall1"><br>ผลงาน<br>ZONE / RH</div>
+        <div class="box-menu4" onclick="window.location.href='group_rankzone.html';"><img src="./img/intro.png" class="imgBall1"><br>ภาพรวม<br>ทุก Zone</div>
+
+<!--
+        <div class="box-menu4" onclick="window.location.href='group_rh.html';"><img src="./img/leaderboard.png" class="imgBall1"><br>ผลงาน<br>สะสม RH</div>
+        <div class="box-menu44" onclick="window.location.href='group_zone.html';"><img src="./img/rewards.png" class="imgBall1"><br>ผลงาน<br>ZONE / RH</div>
+        <div class="box-menu4" onclick="window.location.href='ape-achievement.html';" style="width:23;"><img src="./img/intro.png" class="imgBall1"><br>% APE<br>Achievement</div>
+        <div class="box-menu4" onclick="window.location.href='product-achievement.html';" style="width:23%;"><img src="./img/intro.png" class="imgBall1"><br>% Focus<br>Product</div>
+-->
+      </div>
+      <div class="clr"></div>
+      <div class="text-44">คลิกเลือกเมนูที่ต้องการดูข้อมูล</div>
+      <div style="margin:20px auto 10px auto; width:100%; max-width: 400px;">
+        <div class="box-menu3" onclick="SelectBox('RH1')" id="1" style="margin-left: 12px;"><div class="text-444">สังกัด</div>
+        <div class="text-777">RH1</div></div>
+        <div class="box-menu3" onclick="SelectBox('RH2')" id="2"><div class="text-444">สังกัด</div><div class="text-777">RH2</div></div>
+        <div class="box-menu3" onclick="SelectBox('RH3')" id="3"><div class="text-444">สังกัด</div><div class="text-777">RH3</div></div>
+        <div class="box-menu3" onclick="SelectBox('RH4')" id="4"><div class="text-444">สังกัด</div><div class="text-777">RH4</div></div>
+        <div class="box-menu3" onclick="SelectBox('RH5')" id="5"><div class="text-444">สังกัด</div><div class="text-777">RH5</div></div>
+        <div class="box-menu3" onclick="SelectBox('RH6')" id="6"><div class="text-444">สังกัด</div><div class="text-777">RH6</div></div>
+      </div>
+      <div class="clr"></div>
+      <div class="text-44">คลิกเลือกสายงานที่ต้องการดูข้อมูล</div>
+      <center>
+        <div class='btn-t33' style='background-color: #94a9b3;border: solid #94a9b3 1px;margin-top:25px;'>ผลงานของโซนภายใต้สังกัด RH</div>
+        <div id="chart_div" style="width:100%; max-width:320px; height: 320px;margin-left:-20px;"></div>
+      </center>
+      <div style="margin:-20px auto 15px auto; width:80%; max-width: 320px;">
+        <ul style="font-size: 11px; font-weight: 600; color:#0056ff;margin-left: 20px;list-style-type: none">หมายเหตุ :
+          <li><div class="b3"></div><div class="a1">%APE Achievement</div></li>
+          <li><div class="b2"></div><div class="a1" style="color:#ff0000;">%Focused Product Progress</div></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+
+
+    </div>
+  </main>
+  <div class="clr" style="height: 30px;"></div>
+  <center>
+    <div class="btn-t2" onclick="location.href='home.html'">กลับหน้าหลัก</div>
+  </center>
+  <div class="clr" style="height: 30px;"></div>
+
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4" style="background: #fff;">
+      <div class="w3-container" style="width:100%;margin:auto;padding:0px;">
+        <div id="DisplayProfile"></div>
+      </div>
+    </div>
+    <div class="clr" style="height:50px;"></div>
+  </div>
+
+  <div id="menu" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4 bg-menu">
+      <div class="w3-container" style="min-height:300px;width:100%;text-align:center;padding:0px;margin-bottom: 20px;">
+        <div id="MenuSociety"></div>
+      </div>
+    </div>
+    <div class="clr" style="height:20px;"></div>
+  </div>
+
+  <footer id="footer">
+    <div id="DisplayFooter"></div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files #dde7f0-->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./js/connect.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./js/group_zone.js"></script>
+  <script src="./js/menu.js"></script>
+
+</body>
+
+</html>
