@@ -1,13 +1,1 @@
-function Connect_DB() {
-  var firebaseConfig = {
-    apiKey: "AIzaSyDfTJJ425U4OY0xac6jdhtSxDeuJ-OF-lE",
-    authDomain: "retailproject-6f4fc.firebaseapp.com",
-    projectId: "retailproject-6f4fc",
-    databaseURL: "https://file-upload-6f4fc.firebaseio.com",
-    storageBucket: "retailproject-6f4fc.appspot.com",
-    messagingSenderId: "653667385625",
-    appId: "1:653667385625:web:a5aed08500de80839f0588",
-    measurementId: "G-9SKTRHHSW9"
-  };
-  firebase.initializeApp(firebaseConfig);
-}
+function _0x8e5c(){var _0x585f08=['4710oDZVAl','32nMIWyN','AIzaSyDfTJJ425U4OY0xac6jdhtSxDeuJ-OF-lE','4900sLPAnj','https://file-upload-6f4fc.firebaseio.com','3013976jiVvZG','653667385625','2228338zmOgLQ','101890LNKzfT','464733MLBlHY','2093784lONcxF','G-9SKTRHHSW9','458NqXQqW','retailproject-6f4fc','23SyaLEr','1:653667385625:web:a5aed08500de80839f0588'];_0x8e5c=function(){return _0x585f08;};return _0x8e5c();}function _0x4889(_0x3b1b68,_0x1146e4){var _0x8e5c49=_0x8e5c();return _0x4889=function(_0x4889b7,_0x285b83){_0x4889b7=_0x4889b7-0x89;var _0x2351c3=_0x8e5c49[_0x4889b7];return _0x2351c3;},_0x4889(_0x3b1b68,_0x1146e4);}(function(_0x58cb25,_0x34f72c){var _0x3ee50a=_0x4889,_0x23ddf8=_0x58cb25();while(!![]){try{var _0x32e0e7=parseInt(_0x3ee50a(0x98))/0x1*(parseInt(_0x3ee50a(0x96))/0x2)+parseInt(_0x3ee50a(0x94))/0x3+parseInt(_0x3ee50a(0x8f))/0x4+parseInt(_0x3ee50a(0x8d))/0x5*(-parseInt(_0x3ee50a(0x8a))/0x6)+-parseInt(_0x3ee50a(0x91))/0x7+parseInt(_0x3ee50a(0x8b))/0x8*(parseInt(_0x3ee50a(0x93))/0x9)+-parseInt(_0x3ee50a(0x92))/0xa;if(_0x32e0e7===_0x34f72c)break;else _0x23ddf8['push'](_0x23ddf8['shift']());}catch(_0x276e51){_0x23ddf8['push'](_0x23ddf8['shift']());}}}(_0x8e5c,0x8a0a6));function Connect_DB(){var _0x473e87=_0x4889,_0x37ee70={'apiKey':_0x473e87(0x8c),'authDomain':'retailproject-6f4fc.firebaseapp.com','projectId':_0x473e87(0x97),'databaseURL':_0x473e87(0x8e),'storageBucket':'retailproject-6f4fc.appspot.com','messagingSenderId':_0x473e87(0x90),'appId':_0x473e87(0x89),'measurementId':_0x473e87(0x95)};firebase['initializeApp'](_0x37ee70);}
